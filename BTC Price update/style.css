@@ -1,0 +1,27 @@
+body {
+    color: #faedcd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: #14213d;
+    background-color: #fca311;
+    padding: 10px;
+    border: #14213d solid 5px;
+}
+
+h2 {
+    color: #14213d;
+}
+
+button {
+    background-color: #219ebc;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#price {
+    color:#fca311;
+    background-color: #219ebc;
+    font-size: 3em;
+}
