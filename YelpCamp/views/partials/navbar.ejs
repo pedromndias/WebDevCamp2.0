@@ -1,0 +1,29 @@
+<!-- This file has a Bootstrap 5 style navbar -->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">YelpCamp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/campgrounds">Campgrounds</a>
+                <a class="nav-link" href="/campgrounds/new">New Campground</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <!-- Check if a user is signed in and show either one or other links: -->
+                <% if(!currentUser) {%>
+                <a class="nav-link" href="/login">Login</a>
+                <a class="nav-link" href="/register">Register</a>
+                <% } else {%>
+                <a class="nav-link" href="/logout">Logout</a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</nav>
+

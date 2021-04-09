@@ -1,0 +1,14 @@
+<!-- This file is a template for Error, coded with Bootstrap -->
+<% layout("layouts/boilerplate") %>
+<div class="row">
+    <div class="col-6 offset-3">
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading"><%=err.message%></h4>
+            <!-- Next line will print the error stack, for development reasons -->
+            <% if(process.env.NODE_ENV !== "production") { %> 
+            <p><%=err.stack%></p>
+            <% } %>
+             <!-- Remember that the stack error should not be displayed in production mode  -->
+        </div>
+    </div>
+</div>

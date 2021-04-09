@@ -1,0 +1,17 @@
+/* This is our basic stylesheet */
+
+/* Style the cluster map */
+#cluster-map {
+    width: 100%;
+    height: 400px;
+}
+
+/* Style the map on the show page */
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+body {
+    margin-top: 40px;
+}

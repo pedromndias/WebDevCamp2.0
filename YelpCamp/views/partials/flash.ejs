@@ -1,0 +1,23 @@
+<!-- In this file we code an Bootstrap alert for our flash message -->
+<!--  Check if success message exists and is not empty -->
+<% if(success && success.length) {%>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <!-- Show success message -->
+        <%= success %>
+        <!-- Have a dismiss button on the message -->
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<% } %>
+
+<!-- Now the same code but for errors: -->
+<% if(error && error.length) {%>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <!-- Show error message -->
+        <%= error %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<% } %>
